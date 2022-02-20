@@ -3,9 +3,9 @@
 Website Link :  https://srmsphpproject.000webhostapp.com/
 
 Tech Stack :
-  Frontend:HTML,CSS,JavaScript
-  Backend:PHP
-  Database:MySQL
+- Frontend:HTML,CSS,JavaScript
+- Backend:PHP
+- Database:MySQL
 
 Note:
 - Student can only view their marks
