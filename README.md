@@ -8,6 +8,6 @@ Tech Stack :
   Database:MySQL
 
 Note:
-    - Student can only view their Marks
-    - Admin/Teacher can view and edit student marks
-    - New student can be added to the database by admin.
+- Student can only view their marks
+- Admin/Teacher can view and edit student marks
+- New student can be added to the database by admin.
