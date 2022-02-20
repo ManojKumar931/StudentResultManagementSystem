@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+}
+
+header{
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header i{
+    margin-right: 1.5rem;
+
+}
+
+header .logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #414A4C;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding:.5rem 2rem;
+}
+
+header nav{
+    font-size: 2rem;
+
+}
+
+header nav a{
+    
+    padding:1.2rem 2.5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    color:#414a4c;
+}
+
+header nav a:hover{
+    color:#0e7bc0;
+}
+
+header nav a:after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:50%;
+    height: 3px;
+    width:0;
+    transform:translateX(-50%) scaleX(0);
+    background-color: #0e7bc0;
+    transition: transform 250ms;
+
+}
+
+header nav a:hover:after{
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.home{
+    background: url("../images/home.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#result-nav{
+    background-color: #0e7bc0;
+    color:#fff;
+}
+
+#menu-bars{
+    color: #192a56;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* media query  */
+
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    
+}
+
+@media (max-width:768px){
+
+    #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar {
+        position:absolute;
+        top: 12%;
+        left: 0;
+        right: 0;
+        padding:1rem 2rem;
+        border-top:.1rem solid rgba(0,0,0,.1);
+        border-bottom:.1rem solid rgba(0,0,0,.1);
+        background-color:#fff;
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        background-color: #eee;
+        margin:1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}

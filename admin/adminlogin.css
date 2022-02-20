@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* header section  */
+
+header{
+    text-align: center;
+    background-color: white;
+    padding: 2rem 9%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2{
+    font-family: 'Andada Pro',serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+header img{
+    width:50px;
+    height: 50px;
+}
+
+header .content p{
+    font-weight : 100 ; 
+    margin:5px;
+    font-size: 1.7rem;
+}
+
+header .content #admin-login{
+    margin-top:2rem;
+    font-size: 3rem;
+}
+
+
+/* form section  */
+
+form{
+    background-color: white;
+    text-align: center;
+    padding: 5rem;
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    z-index: 20;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.3);
+}
+
+.admin-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-form div{
+    margin:2rem;
+}
+
+.admin-form input{
+    padding:1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,0.3);
+}
+
+.admin-form #submit:hover{
+    color:white;
+    background-color: green;
+    cursor: pointer;
+}
+
+/* media query  */
+
+@media(max-width:560px){
+
+    html{
+        font-size: 50%;
+    }
+
+    form{
+        margin-top: 2rem;
+        padding: 3rem 3rem;
+    }
+
+}
+
+@media(max-width:400px){
+
+    html{
+        font-size: 40%;
+    }
+
+}
